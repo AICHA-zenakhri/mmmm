@@ -56,8 +56,6 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`order_id`, `user_id`, `method`, `total_products`, `total_price`, `placed_on`, `orders_status`) VALUES
-(2, 7, 'mb', '4', 1500, '2023-05-29', 'waiting');
 
 -- --------------------------------------------------------
 
@@ -75,8 +73,7 @@ CREATE TABLE `order_items` (
 -- Dumping data for table `order_items`
 --
 
-INSERT INTO `order_items` (`order_id`, `dish_id`, `item_quantity`) VALUES
-(2, 5, 5);
+
 
 -- --------------------------------------------------------
 
@@ -183,15 +180,6 @@ CREATE TABLE `restaurant` (
 -- Dumping data for table `restaurant`
 --
 
-INSERT INTO `restaurant` (`restaurant_id`, `email`, `store_name`, `store_address`, `phone_num`, `business`, `rest_img`) VALUES
-(1, 'aicha@gmail.com', 'sdsd', 'dsds', '112', 'coffe_shop', 'uploads/64745c4f01ea78.73707293.png'),
-(2, 'aichaaa@gmail.com', 'sds', 'dsd', '323', 'Restaurant', 'uploads/64745e04a7ebf1.40936097.png'),
-(3, 'a@gmail.com', 'ds', 'sds', '222', 'Restaurant', 'uploads/64746194652e28.50488692.png'),
-(4, 'ss@gmail.com', 'sds', 'sdsd', '323', 'Restaurant', 'uploads/647463e04258b6.91684953.png'),
-(5, 'sdsdsd@gmail.com', 'sdsd', 'sds', '1234', 'Restaurant', 'uploads/647465e2eac0f2.25655485.png'),
-(6, 'wewe@gmail.com', 'ererer', 'reerer', '2222', 'Coffee Shop', 'uploads/647466765a68a6.19087469.jpg'),
-(7, 'aaaa@gmail.com', 'sds', 'ds', '111', 'coffe_shop', 'uploads/647467f86166f4.33087453.png'),
-(8, 'diou@gmail.com', 'asas', 'asa', '1234', 'Restaurant', 'uploads/6475106ad7e341.54879024.png');
 
 -- --------------------------------------------------------
 
@@ -212,23 +200,6 @@ CREATE TABLE `users` (
 
 --
 -- Dumping data for table `users`
---
-
-INSERT INTO `users` (`user_full_name`, `email`, `pass`, `tlf_num`, `user_address`, `allergy`, `profile_type`, `user_id`) VALUES
-('aicha', 'sar@gmail.com', '123', '133321', '12121', '', 'owner', 1),
-('aicha', 'aicha@gmail.com', '333', '112', '1212', '', 'owner', 2),
-('sdsd', 'aichaaa@gmail.com', '22', '323', 'dsds', NULL, 'owner', 3),
-('aicha', 'a@gmail.com', 'dsd', '222', 'ssd', NULL, 'owner', 4),
-('dsds', 'ss@gmail.com', '111', '323', 'sds', NULL, 'owner', 5),
-('aicha', 'sdsdsd@gmail.com', 'wwew', '1234', 'sd', NULL, 'owner', 6),
-('wew', 'wewe@gmail.com', '123', '23', '222', NULL, 'owner', 7),
-('aaa', 'aaaa@gmail.com', '$2y$10$T9XHWO9e80v36PA6uq0Ki.ySxsVSM1HpCSNj3XIc9klOQzHC8Uwli', '111', 'ss', NULL, 'owner', 8),
-('aicha', 'www@gmail.com', '$2y$10$/WLiFNHBqVkSpJO1dMYPDeSgD6MvYxEq/Yh1yMZzsnL262FPPEI0W', '3232', 'sdsdsdsd', 'Gluten-free', 'customer', 9),
-('sdsd', 'dsds@gmail.com', '$2y$10$g/AUTAWT9pgXmYpceDznJewl6b1WiOdJ0r.Wvu.jU1QDlDiNhH/Ji', '32323', 'sdsdsd', 'Gluten-free', 'customer', 10),
-('dwe', 'wewe@gmail.com', '$2y$10$fXI4JDoTIE5b5X5CrM/ikeBF5VDkV6nGRJg3TPhxPcGGuedi1iUku', '23232', 'sasas', NULL, 'owner', 11);
-
---
--- Indexes for dumped tables
 --
 
 --
